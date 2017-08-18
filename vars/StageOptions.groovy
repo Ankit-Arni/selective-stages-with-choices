@@ -16,7 +16,7 @@ class StageOptions implements Serializable {
         if(action == 'Do this stage')
             command//checkTypeOfCommand()
     	else {
-		    currentBuild.result = 'ABORTED'
+			currentBuild.result = 'ABORTED'
 	        error("Aborted by user")
     	}
     }
